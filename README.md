@@ -5,18 +5,18 @@
 This repository will help you implement Django Debug Toolbar in your web application.
 
 ## What is Django Debug Toolbar?
-The Django Debug Toolbar is a configurable set of panels that display various debug information about the current request/response and when clicked, display more details about the panel's content.
+The Django Debug Toolbar is a configurable set of panels that display various debug information about the current request/response and when clicked, display more details about the panel’s content.
 
 ## How to install and implement Django Debug Toolbar?
-For the installation of the Django Debug Toolbar you need to have a django project where you can use pip in a Virtual Environment or without them. If you don't want to use pip, you can get the code of this component from here (https://github.com/jazzband/django-debug-toolbar) and put it in your django project path; but the pip installation is more easy and I will focus on that.
+For the installation of the Django Debug Toolbar, you need to have a Django project where you can use pip in a Virtual Environment or without them. If you don’t want to use pip, you can get the code of this component from here (https://github.com/jazzband/django-debug-toolbar) and put it in your Django project path; but the pip installation is easier and I will focus on that.
 
 For installation I recommend using the virtual env and executing this command:
 ```sh
 $ pip install django-debug-toolbar
 ```
-The configuration of this component is simple, you just need to change your project's urls.py and settings.py to use the toolbar.
+The configuration of this component is simple, you just need to change your project’s urls.py and settings.py to use the toolbar.
 
-In your project's urls.py, enter this code:
+In your project’s urls.py, enter this code:
 ```sh
 from django.conf import settings
 from django.urls import include, path  # For django versions from 2.0 and up
@@ -29,9 +29,9 @@ urlpatterns = [
     
 ] 
 ```
->Take care with the imports because it is possible that you may duplicate some of this.
+>Take care of the imports because it is possible that you may duplicate some of this.
 
-Now In your project's settings.py make sure that debug mode is true.
+Now In your project’s settings.py, make sure that debug mode is true.
 ```sh
 DEBUG = True
 ```
@@ -84,7 +84,7 @@ This is the default configuration and if you want to see more options, you can s
 
 >https://django-debug-toolbar.readthedocs.io/en/stable/configuration.html
 
-**Note**: It is very important that you have the close body tag ( </body> ) in your base template for the Django Debug Toolbar is showing.
+**Note**: It is very important that you have the close body tag ( ) in your base template for the Django Debug Toolbar is showing.
 
-This component has a variety of panels that can be added through the configuration. These panels show different information related to http requests / responses and other relevant debug data. In this url you can see all different default panels and you can learn how to use and configure it. http://django-debug-toolbar.readthedocs.io/en/stable/panels.html
+This component has a variety of panels that can be added through the configuration. These panels show different information related to HTTP requests/responses and other relevant debug data. In this URL, you can see all different default panels and you can learn how to use and configure it. http://django-debug-toolbar.readthedocs.io/en/stable/panels.html
 
