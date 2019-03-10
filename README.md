@@ -1,4 +1,6 @@
-# Django-Debug-Toolbar-Setup
+# Django Debug Toolbar Setup
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+
 This repository will help you implement Django Debug Toolbar in your web application.
 
 ## What is Django Debug Toolbar?
