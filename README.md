@@ -1,5 +1,5 @@
 # Django-Debug-Toolbar-Setup
-This repository will help you to implement Django Debug Toolbar in your web application.
+This repository will help you implement Django Debug Toolbar in your web application.
 
 ## What is Django Debug Toolbar?
 The Django Debug Toolbar is a configurable set of panels that display various debug information about the current request/response and when clicked, display more details about the panel's content.
