@@ -10,13 +10,13 @@ The Django Debug Toolbar is a configurable set of panels that display various de
 ## How to install and implement Django Debug Toolbar?
 For the installation of the Django Debug Toolbar you need to have a django project where you can use pip in a Virtual Environment or without them. If you don't want to use pip, you can get the code of this component from here (https://github.com/jazzband/django-debug-toolbar) and put it in your django project path; but the pip installation is more easy and I will focus on that.
 
-For installation I recommend use the virtual env and execute this command:
+For installation I recommend using the virtual env and executing this command:
 ```sh
 $ pip install django-debug-toolbar
 ```
-The configuration of this component is simple, you just need change your projects urls.py and settings.py to use the toolbar.
+The configuration of this component is simple, you just need to change your project's urls.py and settings.py to use the toolbar.
 
-In your projects urls.py, enter this code:
+In your project's urls.py, enter this code:
 ```sh
 from django.conf import settings
 from django.urls import include, path  # For django versions from 2.0 and up
@@ -31,7 +31,7 @@ urlpatterns = [
 ```
 >Take care with the imports because it is possible that you may duplicate some of this.
 
-Now In your projects settings.py make sure that debug mode is true.
+Now In your project's settings.py make sure that debug mode is true.
 ```sh
 DEBUG = True
 ```
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     #...
 ]
 ```
-Add INTERNAL_IPS in settings.py; The INTERNAL_IPS conf is valid for a local development environment, if your dev env is different, you just change this field with your valid conf.
+Add INTERNAL_IPS in settings.py; The INTERNAL_IPS conf is valid for a local development environment, if your dev environment is different, you just change this field with your valid configuration.
 ```sh
 INTERNAL_IPS = ('127.0.0.1', '0.0.0.0', 'localhost',)
 ```
@@ -80,11 +80,11 @@ DEBUG_TOOLBAR_CONFIG = {
 ```
 **You did it!**
 
-This is the default conf and if you want see more options you can see this page:
+This is the default configuration and if you want to see more options, you can see this page:
 
 >https://django-debug-toolbar.readthedocs.io/en/stable/configuration.html
 
 **Note**: It is very important that you have the close body tag ( </body> ) in your base template for the Django Debug Toolbar is showing.
 
-This component has a variety of panels that can be added through the configuration, these panels show different information related to http requests / responses and other relevant debug data, in this url you can see all differents default panels and you can learn how to use and configure it. http://django-debug-toolbar.readthedocs.io/en/stable/panels.html
+This component has a variety of panels that can be added through the configuration. These panels show different information related to http requests / responses and other relevant debug data. In this url you can see all different default panels and you can learn how to use and configure it. http://django-debug-toolbar.readthedocs.io/en/stable/panels.html
 
