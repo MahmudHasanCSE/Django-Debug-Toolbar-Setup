@@ -16,7 +16,7 @@ $ pip install django-debug-toolbar
 ```
 The configuration of this component is simple, you just need change your projects urls.py and settings.py to use the toolbar.
 
-In your project urls.py, enter this code:
+In your projects urls.py, enter this code:
 ```sh
 from django.conf import settings
 from django.urls import include, path  # For django versions from 2.0 and up
@@ -29,13 +29,13 @@ urlpatterns = [
     
 ] 
 ```
->Take care with the “imports” because it’s possible that you may duplicate some of this.
+>Take care with the imports because it is possible that you may duplicate some of this.
 
 Now In your projects settings.py make sure that debug mode is true.
 ```sh
 DEBUG = True
 ```
-Install debug_toolbar and make sure django.contrib.staticfiles exists.
+Add debug_toolbar and make sure django.contrib.staticfiles exists in INSTALLED_APPS.
 ```sh
 INSTALLED_APPS = [
     #...
