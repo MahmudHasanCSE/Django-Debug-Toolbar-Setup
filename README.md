@@ -57,7 +57,7 @@ Add INTERNAL_IPS in settings.py; The INTERNAL_IPS conf is valid for a local deve
 ```sh
 INTERNAL_IPS = ('127.0.0.1', '0.0.0.0', 'localhost',)
 ```
-Add DEBUG_TOOLBAR_PANELS and DEBUG_TOOLBAR_CONFIG in settings.py
+Add DEBUG_TOOLBAR_PANELS in settings.py
 ```sh
 DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.versions.VersionsPanel',
@@ -73,10 +73,6 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.logging.LoggingPanel',
     'debug_toolbar.panels.redirects.RedirectsPanel',
 ]
-
-DEBUG_TOOLBAR_CONFIG = {
-       'INTERCEPT_REDIRECTS': False,
-}
 ```
 **You did it!**
 
